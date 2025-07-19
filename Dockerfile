@@ -8,6 +8,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies using bun
+RUN npm install -g npm@latest
 RUN npm install
 
 # Copy the rest of the source code
